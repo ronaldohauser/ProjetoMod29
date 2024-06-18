@@ -23,8 +23,8 @@ public class ProdutoTest {
         Produto produto = new Produto();
         
         produto.setCodigo("10");
-        produto.setNome("Computador");
-        produto.setValor(3500.00);
+        produto.setNome("Tênis de Corrida");
+        produto.setValor(1000.00);
         Integer countCad = produtoDAO.cadastrar(produto);
         assertTrue(countCad == 1);
         
@@ -44,8 +44,8 @@ public class ProdutoTest {
         Produto produto = new Produto();
         
         produto.setCodigo("10");
-        produto.setNome("Computador");
-        produto.setValor(3500.00);
+        produto.setNome("Tênis de Corrida");
+        produto.setValor(1000.00);
         Integer countCad = produtoDAO.cadastrar(produto);
         assertTrue(countCad == 1);
         
@@ -65,8 +65,8 @@ public class ProdutoTest {
         Produto produto = new Produto();
         
         produto.setCodigo("10");
-        produto.setNome("Computador");
-        produto.setValor(3500.00);
+        produto.setNome("Tênis de Corrida");
+        produto.setValor(1000.00);
         Integer countCad = produtoDAO.cadastrar(produto);
         assertTrue(countCad == 1);
         
@@ -86,13 +86,13 @@ public class ProdutoTest {
     
         Produto p1 = new Produto();
         p1.setCodigo("10");
-        p1.setNome("Computador");
-        p1.setValor(3500.00);
+        p1.setNome("Tênis de Corrida");
+        p1.setValor(1000.00);
         
         Produto p2 = new Produto();
         p2.setCodigo("20");
-        p2.setNome("Celular");
-        p2.setValor(1500.00);
+        p2.setNome("Anilha");
+        p2.setValor(800.00);
         
         Integer count1 = produtoDAO.cadastrar(p1);
         Integer count2 = produtoDAO.cadastrar(p2);
@@ -120,8 +120,8 @@ public class ProdutoTest {
         Produto produto = new Produto();
         
         produto.setCodigo("10");
-        produto.setNome("Computador");
-        produto.setValor(3500.00);
+        produto.setNome("Tênis de Corrida");
+        produto.setValor(1000.00);
         Integer countCad = produtoDAO.cadastrar(produto);
         assertTrue(countCad == 1);
         
@@ -132,8 +132,8 @@ public class ProdutoTest {
         assertEquals(produto.getValor(), produtoDB.getValor());
         
         produtoDB.setCodigo("20");
-        produtoDB.setNome("Notebook");
-        produtoDB.setValor(3400.00);
+        produtoDB.setNome("Boné");
+        produtoDB.setValor(400.00);
         Integer countUpdate = produtoDAO.atualizar(produtoDB);
         assertTrue(countUpdate == 1);
         
